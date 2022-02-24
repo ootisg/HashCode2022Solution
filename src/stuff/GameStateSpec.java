@@ -14,5 +14,6 @@ public interface GameStateSpec {
 	public void syncToState (GameStateSpec gs);
 	public void beginProject (Project p);
 	public void completeAllProjects ();
+	public void addPerson (Person p);
 
 }
