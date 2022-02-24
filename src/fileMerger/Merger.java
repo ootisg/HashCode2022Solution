@@ -1,11 +1,13 @@
 package fileMerger;
 
-public class Merger{
+public class Merger
+{
 
 //project with an array list of persons and projects
 public File mergeInfo(GameState gamer)
 	{
-		Writer w = new Writer(); //needs path
+		File file = new File("output");
+		Writer w = new Writer(file);
 		w.write(gamer.projects.size() + "/n");
 		for (int i = 0; i < gamer.projects.size(); i++)
 		{
@@ -20,6 +22,6 @@ public File mergeInfo(GameState gamer)
 			w.close();
 			 //need method for getting optimal workers
 		}
-
+		return file;
 	}
 }
