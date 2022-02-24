@@ -15,5 +15,7 @@ public interface GameStateSpec {
 	public void beginProject (Project p);
 	public void completeAllProjects ();
 	public void addPerson (Person p);
+	public void addProject (Project p);
+	public int setTime ();
 
 }
