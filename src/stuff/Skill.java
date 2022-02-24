@@ -13,6 +13,11 @@ public class Skill {
 	int getLevel() {
 		return level;
 	}
+	
+	void levelUp() {
+		level = level + 1;
+	}
+	
 	String getName () {
 		return skillName;
 	}
