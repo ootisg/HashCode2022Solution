@@ -45,7 +45,7 @@ public GameState readFile(file File)
 			Skill skill = new Skill(skillSplit[0], skillSplit[1]);
 			skills[j] = skill; 
 		}
-		Project proj = new Project(name, numDays, score, expireBy);
+		Project proj = new Project(name, numDays, score, expireBy, 0);
 		projects[i] = proj;
 	}
 	return new GameState(workers, projects);
